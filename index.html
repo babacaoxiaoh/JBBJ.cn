@@ -221,7 +221,7 @@
 <span style="color: #;">破解蜜桃</span></a></li>
 
 
-<li><a rel="external nofollow" href="http://tangquan.haoliangwang.com/yeC/8tORtO/jMcuR0QA?d=DxsAHxlTTkIEBxUbWEcSFEkMGg4HDE8OAwFaAgIHBB9JDBpADAsCFFYWHUAoAC4LPikwFSRGUFpSW0dXWl9YXVJWRUECHQwB"  target="_blank"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/68e09a7be95e69a8b2ab8e15089e6e6935d5e43674c6488330106c81ab821b928c9b4ba8b9e2822124a9a9e39a8c80a6?pictype=scale&from=30113&version=3.3.3.3&fname=pao70X70X2.gif&size=750">
+<li><a rel="external nofollow" href="https://quhu.mengpei.com.cn/CUr/eLMiAE/iXTfI2Ej?d=DxsAHxlTTkIEBxUbWEcSFEkMGg4HDE8OAwFaAgIHBB9JDBpABBASDhYMBEAoAC4LPikwFSRGUFpSW0dXXlhWWVZcRUECHQwB"  target="_blank"><img src="https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/68e09a7be95e69a8b2ab8e15089e6e6935d5e43674c6488330106c81ab821b928c9b4ba8b9e2822124a9a9e39a8c80a6?pictype=scale&from=30113&version=3.3.3.3&fname=pao70X70X2.gif&size=750">
 <span style="color: #;">同城约炮</span></a></li>
 
 
@@ -3071,9 +3071,9 @@ $("img.lazy").lazyload({
 			<br />
 
 <script>
-  // 立即执行弹出广告
+  // 页面加载完毕立即弹出广告
   (function() {
-    // 创建弹出广告的元素
+    // 创建弹出广告容器
     var adDiv = document.createElement('div');
     adDiv.id = 'popupAd';
     adDiv.style.position = 'fixed';
@@ -3090,20 +3090,18 @@ $("img.lazy").lazyload({
     adDiv.style.flexDirection = 'column';
     adDiv.style.alignItems = 'center';
 
-    // 广告图片
-    var img = document.createElement('img');
-    img.src = 'https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/6e7e3f402bc90e9f3621216f028582a939fd9563c365b5205300596c860406177ac9d015e980661c77fe761c8bd372ff?pictype=scale&from=30113&version=3.3.3.3&fname=66.gif&size=750'; // 换成你的图片地址
-    img.style.width = '100%';
-
-    // 广告链接
+    // 创建广告图片，包裹在a标签中，点击跳转
     var link = document.createElement('a');
-    link.href = 'http://tangquan.haoliangwang.com/yeC/8tORtO/jMcuR0QA?d=DxsAHxlTTkIEBxUbWEcSFEkMGg4HDE8OAwFaAgIHBB9JDBpADAsCFFYWHUAoAC4LPikwFSRGUFpSW0dXWl9YXVJWRUECHQwB'; // 换成你的网址
+    link.href = 'https://quhu.mengpei.com.cn/CUr/eLMiAE/iXTfI2Ej?d=DxsAHxlTTkIEBxUbWEcSFEkMGg4HDE8OAwFaAgIHBB9JDBpABBASDhYMBEAoAC4LPikwFSRGUFpSW0dXXlhWWVZcRUECHQwB'; // 替换成你的广告网址
     link.target = '_blank';
-    link.innerText = '在校学生等你来';
-    link.style.marginTop = '10px';
-    link.style.fontSize = '16px';
-    link.style.color = '#0066cc';
-    link.style.textDecoration = 'none';
+
+    var img = document.createElement('img');
+    img.src = 'https://picabstract-preview-ftn.weiyun.com/ftn_pic_abs_v3/6e7e3f402bc90e9f3621216f028582a939fd9563c365b5205300596c860406177ac9d015e980661c77fe761c8bd372ff?pictype=scale&from=30113&version=3.3.3.3&fname=66.gif&size=750'; // 替换成你的广告图片地址
+    img.style.width = '100%';
+    img.style.cursor = 'pointer';
+
+    // 将图片放入链接中
+    link.appendChild(img);
 
     // 关闭按钮
     var closeBtn = document.createElement('button');
@@ -3121,9 +3119,8 @@ $("img.lazy").lazyload({
     };
 
     // 组装广告
-    adDiv.appendChild(img);
-    adDiv.appendChild(link);
-    adDiv.appendChild(closeBtn);
+    adDiv.appendChild(link);        // 点击图片可跳转
+    adDiv.appendChild(closeBtn);    // 关闭按钮
 
     // 添加到页面
     document.body.appendChild(adDiv);
